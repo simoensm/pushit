@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Camera for push-up detection -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Vibration for haptic rep feedback -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Network for Firebase sync -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- FCM push notifications (API 33+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Wake lock to keep screen on during workout -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="true" />
+
+    <application
+        android:name=".PushItApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PushIt"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:localeConfig="@xml/locale_config">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Friends Ranking home screen widget -->
+        <receiver
+            android:name=".widget.FriendsRankingWidgetReceiver"
+            android:exported="true"
+            android:label="Today's Friends Ranking">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/friends_ranking_widget_info" />
+        </receiver>
+
+        <!-- WorkManager worker (no special declaration needed; listed here for clarity) -->
+
+        <!-- UCrop: override the library's default theme so the toolbar is dark-themed.
+             The library's own manifest still registers UCropActivity — this entry just
+             overrides the theme attribute via manifest merger tools:replace. -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UCrop"
+            tools:replace="android:theme" />
+
+        <!-- Our wrapper activity — used instead of UCropActivity so we can call
+             WindowCompat.setDecorFitsSystemWindows(window, true) before super.onCreate,
+             ensuring the toolbar never renders behind the status bar. -->
+        <activity
+            android:name=".core.ui.PushItCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UCrop" />
+
+        <!-- FCM service -->
+        <service
+            android:name=".core.notification.PushItMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

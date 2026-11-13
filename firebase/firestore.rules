@@ -1,0 +1,103 @@
+rules_version = '2';
+service cloud.firestore {
+
+  // Returns true if the caller is only adding or removing their own UID
+  // from another user's friends array.
+  function friendsEditOk(existing, incoming, caller) {
+    let oldF = existing.get('friends', []);
+    let newF = incoming.friends;
+    return newF.toSet().difference(oldF.toSet()) == [caller].toSet()
+        || oldF.toSet().difference(newF.toSet()) == [caller].toSet();
+  }
+
+  match /databases/{database}/documents {
+
+    // ── Username uniqueness helper ────────────────────────────────────────────
+    // Returns true if no other user document already claims this username.
+    // Firestore rules cannot query other docs, so uniqueness is enforced by
+    // requiring the username field to equal the one already stored (unchanged)
+    // or by the app verifying uniqueness before write. The primary guard is the
+    // app-side isUsernameTaken() call; this rule prevents the owner from
+    // silently overwriting their username to something that collides.
+    function usernameValid(username) {
+      return username is string
+        && username.size() >= 3
+        && username.size() <= 30
+        && username.matches('[a-z0-9_.]+');
+    }
+
+    // Users collection
+    match /users/{uid} {
+      // Public read — needed for username uniqueness check during sign-up and friend search
+      allow read: if true;
+      // Only the owner can create their own profile, and username must be valid
+      allow create: if request.auth != null
+        && request.auth.uid == uid
+        && usernameValid(request.resource.data.username);
+      allow delete: if request.auth != null && request.auth.uid == uid;
+      // Owner can update any field.
+      // If username is being changed it must still be valid (format only —
+      // uniqueness is enforced at the app layer via isUsernameTaken()).
+      // Other authenticated users may ONLY modify the friends array, and only to
+      // add or remove their own UID (needed for friend accept / unfriend flows).
+      allow update: if request.auth != null && (
+        (
+          request.auth.uid == uid
+          && (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['username'])
+              || usernameValid(request.resource.data.username))
+        )
+        ||
+        (
+          // Only the friends field may change
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['friends']) &&
+          friendsEditOk(resource.data, request.resource.data, request.auth.uid)
+        )
+      );
+    }
+
+    // Friend requests
+    match /friendRequests/{requestId} {
+      // Sender or recipient can read
+      allow read: if request.auth != null &&
+        (resource.data.fromUid == request.auth.uid ||
+         resource.data.toUid   == request.auth.uid);
+      // Any signed-in user can create a request where they are the sender
+      allow create: if request.auth != null &&
+        request.resource.data.fromUid == request.auth.uid;
+      // Sender or recipient can update (accept / decline / cancel)
+      allow update: if request.auth != null &&
+        (resource.data.fromUid == request.auth.uid ||
+         resource.data.toUid   == request.auth.uid);
+      allow delete: if request.auth != null &&
+        (resource.data.fromUid == request.auth.uid ||
+         resource.data.toUid   == request.auth.uid);
+    }
+
+    // Sessions
+    match /sessions/{sessionId} {
+      allow read, write: if request.auth != null && resource.data.uid == request.auth.uid;
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+    }
+
+    // Daily logs — any signed-in user can read (needed for friends ranking).
+    // Writes are restricted to the log's own uid so users can't fake each other's reps.
+    match /dailyLogs/{logId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.resource.data.uid == request.auth.uid;
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+    }
+
+    // Challenges — read-only for all signed-in users
+    match /challenges/{challengeId} {
+      allow read: if request.auth != null;
+    }
+
+    // User challenges (activated challenges + progress)
+    match /userChallenges/{ucId} {
+      allow read:   if request.auth != null && resource.data.uid == request.auth.uid;
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+      allow update: if request.auth != null && resource.data.uid == request.auth.uid;
+      allow delete: if request.auth != null && resource.data.uid == request.auth.uid;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Near-black background matching the app theme and the logo background -->
+    <solid android:color="#080F08" />
+</shape>

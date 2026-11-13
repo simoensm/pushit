@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PushIt</string>
+    <string name="widget_description">Classement des amis aujourd\'hui</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Accueil</string>
+    <string name="nav_workout">Entraînement</string>
+    <string name="nav_challenges">Défis</string>
+    <string name="nav_friends">Amis</string>
+    <string name="nav_leaderboard">Classement</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Common -->
+    <string name="common_ok">OK</string>
+    <string name="common_cancel">Annuler</string>
+    <string name="common_retry">Réessayer</string>
+    <string name="common_done">Terminé</string>
+    <string name="common_save">Enregistrer</string>
+    <string name="common_back">Retour</string>
+    <string name="common_close">Fermer</string>
+    <string name="common_loading">Chargement…</string>
+    <string name="common_error">Une erreur est survenue</string>
+    <string name="common_reps">reps</string>
+    <string name="common_you">vous</string>
+
+    <!-- Auth -->
+    <string name="auth_sign_in">Se connecter</string>
+    <string name="auth_sign_up">S\'inscrire</string>
+    <string name="auth_sign_out">Se déconnecter</string>
+    <string name="auth_email">E-mail</string>
+    <string name="auth_password">Mot de passe</string>
+    <string name="auth_username">Nom d\'utilisateur</string>
+    <string name="auth_display_name">Nom affiché</string>
+    <string name="auth_confirm_password">Confirmer le mot de passe</string>
+    <string name="auth_forgot_password">Mot de passe oublié ?</string>
+    <string name="auth_no_account">Pas encore de compte ?</string>
+    <string name="auth_already_account">Déjà un compte ?</string>
+    <string name="auth_google">Continuer avec Google</string>
+    <string name="auth_welcome_back">Bon retour</string>
+    <string name="auth_create_account">Créer votre compte</string>
+    <string name="auth_username_hint">Choisissez un nom unique</string>
+    <string name="auth_password_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="auth_reset_sent">E-mail de réinitialisation envoyé. Vérifiez votre boîte.</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_greeting_morning">Bonjour</string>
+    <string name="dashboard_greeting_afternoon">Bon après-midi</string>
+    <string name="dashboard_greeting_evening">Bonsoir</string>
+    <string name="dashboard_today">AUJOURD\'HUI</string>
+    <string name="dashboard_streak">SÉRIE</string>
+    <string name="dashboard_this_week">Cette semaine</string>
+    <string name="dashboard_start_workout">Commencer</string>
+    <string name="dashboard_weekly_activity">Activité hebdomadaire</string>
+    <string name="dashboard_todays_ranking">Classement du jour</string>
+    <string name="dashboard_no_friends_ranking">Ajoutez des amis pour voir le classement</string>
+    <string name="dashboard_refresh">Actualiser</string>
+    <string name="dashboard_active_challenges">Défis actifs</string>
+    <string name="dashboard_how_stars_work">Comment fonctionnent les étoiles</string>
+    <string name="dashboard_your_stars">Vos étoiles</string>
+    <string name="dashboard_your_currency">Votre monnaie de progression</string>
+    <string name="dashboard_tap_ranks">Appuyez pour voir tous les rangs</string>
+    <string name="dashboard_streak_bonus">Bonus de série</string>
+    <string name="dashboard_combo_multiplier">Multiplicateur combo</string>
+    <string name="dashboard_challenge_rewards">Récompenses de défis</string>
+    <string name="dashboard_advancement_bonuses">Bonus d\'avancement</string>
+    <string name="dashboard_inactivity_penalty">Pénalité d\'inactivité</string>
+    <string name="dashboard_got_it">Compris</string>
+    <string name="dashboard_goal_label">Objectif : %1$d reps</string>
+    <string name="dashboard_days_label">%1$d jours</string>
+
+    <!-- Workout -->
+    <string name="workout_camera_required">Accès caméra requis</string>
+    <string name="workout_camera_rationale">PushIt a besoin de la caméra pour compter vos pompes en temps réel.</string>
+    <string name="workout_permission_needed">Permission requise</string>
+    <string name="workout_open_settings">Activez l\'accès à la caméra dans les paramètres de l\'application.</string>
+    <string name="workout_allow_camera">Autoriser la caméra</string>
+    <string name="workout_grant_permission">Accorder la permission</string>
+    <string name="workout_state_ready">PRÊT</string>
+    <string name="workout_state_calibrating">CALIBRAGE</string>
+    <string name="workout_state_up">HAUT</string>
+    <string name="workout_state_down">BAS</string>
+    <string name="workout_calibrating_label">Calibrage…</string>
+    <string name="workout_reps">REPS</string>
+    <string name="workout_bad_form">Gardez les hanches alignées avec les épaules</string>
+    <string name="workout_phone_moving">Reposez le téléphone pour reprendre</string>
+    <string name="workout_counting_paused">Comptage en pause</string>
+    <string name="workout_pause">Pause</string>
+    <string name="workout_resume">Reprendre</string>
+    <string name="workout_end">Terminer</string>
+    <string name="workout_start">Commencer</string>
+    <string name="workout_session_complete">Séance terminée</string>
+    <string name="workout_total_reps">Total de reps</string>
+    <string name="workout_duration">Durée</string>
+    <string name="workout_avg_pace">Rythme moyen</string>
+    <string name="workout_stars_earned">Étoiles gagnées</string>
+    <string name="workout_combo_bonus">Bonus combo</string>
+    <string name="workout_personal_best">Nouveau record personnel</string>
+    <string name="workout_back_dashboard">Retour au tableau de bord</string>
+    <string name="workout_reps_per_min">%1$.1f reps/min</string>
+    <string name="workout_type_title">Type de pompes</string>
+    <string name="workout_begin">Commencer</string>
+
+    <!-- Push-up variants -->
+    <string name="variant_normal_name">Normales</string>
+    <string name="variant_normal_desc">Position classique</string>
+    <string name="variant_military_name">Militaires</string>
+    <string name="variant_military_desc">Mains sous les épaules, coudes serrés</string>
+    <string name="variant_wide_name">Écartées</string>
+    <string name="variant_wide_desc">Mains très larges, pectoraux dominants</string>
+    <string name="variant_diamond_name">Diamant</string>
+    <string name="variant_diamond_desc">Mains en triangle sous la poitrine</string>
+    <string name="variant_pike_name">Piquées</string>
+    <string name="variant_pike_desc">Bassin plus élevé, épaules dominantes</string>
+    <string name="variant_one_arm_name">Une main</string>
+    <string name="variant_one_arm_desc">Défi ultime — force et équilibre</string>
+
+    <!-- Profile -->
+    <string name="profile_total_reps">TOTAL REPS</string>
+    <string name="profile_best_session">MEILLEURE SÉANCE</string>
+    <string name="profile_best_streak">MEILLEURE SÉRIE</string>
+    <string name="profile_this_week">CETTE SEMAINE</string>
+    <string name="profile_stars">ÉTOILES</string>
+    <string name="profile_friends_count">AMIS</string>
+    <string name="profile_advancements">Avancements</string>
+    <string name="profile_see_all">Voir tout</string>
+    <string name="profile_body_stats">Stats corporelles</string>
+    <string name="profile_height">Taille</string>
+    <string name="profile_weight">Poids</string>
+    <string name="profile_edit_name">Nom affiché</string>
+    <string name="profile_height_unit">%1$d cm</string>
+    <string name="profile_weight_unit">%1$d kg</string>
+    <string name="profile_no_data">—</string>
+    <string name="profile_how_it_works">Comment ça marche</string>
+    <string name="profile_max_rank">Rang maximum — statut légendaire</string>
+    <string name="profile_search_hint">Rechercher par pseudo…</string>
+    <string name="profile_remove_confirm_title">Supprimer %1$s ?</string>
+    <string name="profile_remove_confirm_body">Il/Elle n\'apparaîtra plus sur votre classement.</string>
+
+    <!-- Advancements dialog -->
+    <string name="advancements_all">Tout</string>
+    <string name="advancements_unlocked">Débloqués</string>
+    <string name="advancements_locked">Verrouillés</string>
+    <string name="advancements_subtitle">%1$d / %2$d débloqués</string>
+
+    <!-- Challenges -->
+    <string name="challenges_title">Défis</string>
+    <string name="challenges_tab_all">Tous</string>
+    <string name="challenges_tab_active">Actifs</string>
+    <string name="challenges_tab_done">Terminés</string>
+    <string name="challenges_tab_expired">Expirés</string>
+    <string name="challenges_difficulty_amateur">Amateur</string>
+    <string name="challenges_difficulty_medium">Intermédiaire</string>
+    <string name="challenges_difficulty_advanced">Avancé</string>
+    <string name="challenges_start">Commencer</string>
+    <string name="challenges_keep_going">Continuer</string>
+    <string name="challenges_abandon">Abandonner</string>
+    <string name="challenges_abandon_title">Abandonner le défi ?</string>
+    <string name="challenges_activate_hint">Activez un défi pour commencer le suivi</string>
+    <string name="challenges_days_left">%1$d jours restants</string>
+    <string name="challenges_hours_left">%1$d h restantes</string>
+
+    <!-- Friends -->
+    <string name="friends_title">Amis</string>
+    <string name="friends_add">Ajouter un ami</string>
+    <string name="friends_no_friends">Aucun ami pour l\'instant</string>
+    <string name="friends_no_friends_body">Ajoutez des amis pour vous affronter au classement</string>
+    <string name="friends_wants_friend">Veut être votre ami</string>
+    <string name="friends_accept">Accepter</string>
+    <string name="friends_decline">Refuser</string>
+    <string name="friends_remove">Supprimer</string>
+    <string name="friends_search_hint">Rechercher par pseudo…</string>
+    <string name="friends_no_results">Aucun utilisateur trouvé pour ce pseudo</string>
+    <string name="friends_send_request">Envoyer une demande</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard_title">Classement</string>
+    <string name="leaderboard_global">Mondial</string>
+    <string name="leaderboard_friends">Amis</string>
+    <string name="leaderboard_today">Aujourd\'hui</string>
+    <string name="leaderboard_week">Cette semaine</string>
+    <string name="leaderboard_month">Ce mois</string>
+    <string name="leaderboard_all_time">Tout le temps</string>
+    <string name="leaderboard_empty">Aucune entrée pour l\'instant</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_section_account">Compte</string>
+    <string name="settings_section_session">Session</string>
+    <string name="settings_section_danger">Zone dangereuse</string>
+    <string name="settings_section_language">Langue</string>
+    <string name="settings_email">E-mail</string>
+    <string name="settings_password">Mot de passe</string>
+    <string name="settings_password_change">Modifier</string>
+    <string name="settings_sign_out">Se déconnecter</string>
+    <string name="settings_delete_account">Supprimer le compte</string>
+    <string name="settings_change_email_title">Changer l\'e-mail</string>
+    <string name="settings_change_email_body">Un lien de vérification sera envoyé à votre nouvel e-mail.</string>
+    <string name="settings_new_email">Nouvel e-mail</string>
+    <string name="settings_current_password">Mot de passe actuel</string>
+    <string name="settings_send_verification">Envoyer la vérification</string>
+    <string name="settings_change_password_title">Changer le mot de passe</string>
+    <string name="settings_new_password">Nouveau mot de passe</string>
+    <string name="settings_confirm_password">Confirmer le nouveau mot de passe</string>
+    <string name="settings_password_update">Mettre à jour</string>
+    <string name="settings_sign_out_title">Se déconnecter ?</string>
+    <string name="settings_sign_out_body">Vous devrez vous reconnecter pour suivre vos reps.</string>
+    <string name="settings_delete_title">Supprimer le compte</string>
+    <string name="settings_delete_body">C\'est définitif. Tous vos reps, séries, défis et amis seront supprimés. Cette action est irréversible.</string>
+    <string name="settings_delete_confirm_hint">Confirmez avec votre mot de passe</string>
+    <string name="settings_delete_forever">Supprimer définitivement</string>
+    <string name="settings_lang_english">English</string>
+    <string name="settings_lang_french">Français</string>
+    <string name="settings_password_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="settings_password_too_short">Le mot de passe doit comporter au moins 6 caractères</string>
+    <string name="settings_section_guide">Guide</string>
+    <string name="settings_replay_tour">Revoir le guide de l\'app</string>
+
+    <!-- Notifications settings -->
+    <string name="settings_section_notifications">Notifications</string>
+    <string name="settings_notif_daily_reminder">Rappel quotidien de pompes</string>
+    <string name="settings_notif_daily_reminder_desc">Recevez un rappel pour faire vos pompes chaque jour</string>
+    <string name="settings_notif_reminder_time">Heure du rappel</string>
+    <string name="settings_notif_leaderboard">Progressions dans le classement</string>
+    <string name="settings_notif_leaderboard_desc">Soyez notifié quand vous progressez dans le classement général ou quotidien</string>
+    <string name="settings_notif_challenges">Échéances des défis</string>
+    <string name="settings_notif_challenges_desc">Recevez une alerte quand un défi est sur le point d\'expirer</string>
+
+    <!-- Notification channel names -->
+    <string name="notif_channel_reminder">Rappel quotidien</string>
+    <string name="notif_channel_leaderboard">Classements</string>
+    <string name="notif_channel_challenges">Défis</string>
+
+    <!-- Notification content -->
+    <string name="notif_reminder_title">Il est temps de faire vos pompes</string>
+    <string name="notif_reminder_body">Vous n\'avez pas encore travaillé aujourd\'hui. Restez régulier et maintenez votre progression.</string>
+    <string name="notif_reminder_body_streak">Vous n\'avez pas encore travaillé aujourd\'hui. Vous avez une série de %1$d jours à protéger.</string>
+    <string name="notif_leaderboard_global_title">Classement général amélioré</string>
+    <string name="notif_leaderboard_global_body">Vous êtes maintenant classé #%1$d au classement général. Continuez.</string>
+    <string name="notif_leaderboard_daily_title">Classement quotidien amélioré</string>
+    <string name="notif_leaderboard_daily_body">Vous êtes maintenant classé #%1$d parmi vos amis aujourd\'hui.</string>
+    <string name="notif_challenge_deadline_title">Défi bientôt expiré</string>
+    <string name="notif_challenge_deadline_body">"%1$s" expire dans %2$d heures. Ne laissez pas passer cette occasion.</string>
+
+    <!-- Onboarding tour -->
+    <string name="tour_skip">Passer</string>
+    <string name="tour_next">Suivant</string>
+    <string name="tour_done">C\'est parti !</string>
+
+    <string name="tour_0_title">Bienvenue sur PushIt !</string>
+    <string name="tour_0_body">Salut, moi c\'est Leo — ton partenaire d\'entraînement. Laisse-moi te faire une visite rapide de l\'app pour que tu puisses commencer à tout déchirer.</string>
+
+    <string name="tour_1_title">Ton rang</string>
+    <string name="tour_1_body">Cette carte montre ton niveau de rang actuel et ton nombre d\'étoiles. Gagne des étoiles en faisant des pompes, en relevant des défis et en maintenant ta série !</string>
+
+    <string name="tour_2_title">Objectif du jour et série</string>
+    <string name="tour_2_body">Le cercle se remplit avec les pompes du jour. Le chiffre à côté est ta série — les jours consécutifs d\'activité. Ne la brise pas !</string>
+
+    <string name="tour_3_title">Commencer l\'entraînement</string>
+    <string name="tour_3_body">Appuie sur ce bouton quand tu es prêt. Pose ton téléphone face à toi sur le sol — la caméra frontale comptera chaque pompe automatiquement !</string>
+
+    <string name="tour_4_title">Défis</string>
+    <string name="tour_4_body">Les défis hebdomadaires et mensuels te poussent à atteindre des objectifs précis. Complète-les pour gagner des étoiles bonus et monter en grade plus vite !</string>
+
+    <string name="tour_5_title">Classement général</string>
+    <string name="tour_5_body">L\'onglet Global classe tous les joueurs PushIt par nombre de pompes. Peux-tu atteindre le sommet ?</string>
+
+    <string name="tour_6_title">Classement amis</string>
+    <string name="tour_6_body">Bascule sur Amis pour voir ton rang spécifiquement parmi tes connaissances. Rien de tel qu\'une bonne compétition amicale !</string>
+
+    <string name="tour_7_title">Ajouter des amis</string>
+    <string name="tour_7_body">Appuie sur le bouton Ajouter ici, cherche par pseudo et commence à rivaliser chaque jour avec tes amis !</string>
+
+    <string name="tour_8_title">Ton profil</string>
+    <string name="tour_8_body">Suis ton rang, tes succès et tout ton historique juste ici. C\'est la fin de la visite — maintenant va chercher ces pompes. Je serai là pour t\'encourager !</string>
+</resources>

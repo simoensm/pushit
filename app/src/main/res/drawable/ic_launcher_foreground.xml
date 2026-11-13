@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Adaptive-icon foreground: real PushIt logo bitmap with transparent background.
+  The green figure is centered; ic_launcher_background provides the dark fill.
+-->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/ic_launcher_foreground_bitmap"
+    android:gravity="center" />

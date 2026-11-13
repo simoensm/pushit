@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PushIt</string>
+    <string name="widget_description">Today\'s friends push-up ranking</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_workout">Workout</string>
+    <string name="nav_challenges">Challenges</string>
+    <string name="nav_friends">Friends</string>
+    <string name="nav_leaderboard">Rankings</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Common -->
+    <string name="common_ok">OK</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_done">Done</string>
+    <string name="common_save">Save</string>
+    <string name="common_back">Back</string>
+    <string name="common_close">Close</string>
+    <string name="common_loading">Loading…</string>
+    <string name="common_error">An error occurred</string>
+    <string name="common_reps">reps</string>
+    <string name="common_you">you</string>
+
+    <!-- Auth -->
+    <string name="auth_sign_in">Sign In</string>
+    <string name="auth_sign_up">Sign Up</string>
+    <string name="auth_sign_out">Sign Out</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_password">Password</string>
+    <string name="auth_username">Username</string>
+    <string name="auth_display_name">Display name</string>
+    <string name="auth_confirm_password">Confirm password</string>
+    <string name="auth_forgot_password">Forgot password?</string>
+    <string name="auth_no_account">Don\'t have an account?</string>
+    <string name="auth_already_account">Already have an account?</string>
+    <string name="auth_google">Continue with Google</string>
+    <string name="auth_welcome_back">Welcome back</string>
+    <string name="auth_create_account">Create your account</string>
+    <string name="auth_username_hint">Choose a unique username</string>
+    <string name="auth_password_mismatch">Passwords do not match</string>
+    <string name="auth_reset_sent">Reset email sent. Check your inbox.</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_greeting_morning">Good morning</string>
+    <string name="dashboard_greeting_afternoon">Good afternoon</string>
+    <string name="dashboard_greeting_evening">Good evening</string>
+    <string name="dashboard_today">TODAY</string>
+    <string name="dashboard_streak">STREAK</string>
+    <string name="dashboard_this_week">This Week</string>
+    <string name="dashboard_start_workout">Start Workout</string>
+    <string name="dashboard_weekly_activity">Weekly Activity</string>
+    <string name="dashboard_todays_ranking">Today\'s Ranking</string>
+    <string name="dashboard_no_friends_ranking">Add friends to see the daily ranking</string>
+    <string name="dashboard_refresh">Refresh</string>
+    <string name="dashboard_active_challenges">Active Challenges</string>
+    <string name="dashboard_how_stars_work">How Stars Work</string>
+    <string name="dashboard_your_stars">Your stars</string>
+    <string name="dashboard_your_currency">Your currency of progress</string>
+    <string name="dashboard_tap_ranks">Tap to see all ranks</string>
+    <string name="dashboard_streak_bonus">Streak Bonus</string>
+    <string name="dashboard_combo_multiplier">Combo Multiplier</string>
+    <string name="dashboard_challenge_rewards">Challenge Rewards</string>
+    <string name="dashboard_advancement_bonuses">Advancement Bonuses</string>
+    <string name="dashboard_inactivity_penalty">Inactivity Penalty</string>
+    <string name="dashboard_got_it">Got it</string>
+    <string name="dashboard_goal_label">Goal: %1$d reps</string>
+    <string name="dashboard_days_label">%1$d days</string>
+
+    <!-- Workout -->
+    <string name="workout_camera_required">Camera Access Required</string>
+    <string name="workout_camera_rationale">PushIt needs the camera to count your push-ups in real time using pose detection.</string>
+    <string name="workout_permission_needed">Permission Needed</string>
+    <string name="workout_open_settings">Please enable camera access in app settings to use the workout feature.</string>
+    <string name="workout_allow_camera">Allow Camera</string>
+    <string name="workout_grant_permission">Grant Camera Permission</string>
+    <string name="workout_state_ready">READY</string>
+    <string name="workout_state_calibrating">CALIBRATING</string>
+    <string name="workout_state_up">UP</string>
+    <string name="workout_state_down">DOWN</string>
+    <string name="workout_calibrating_label">Calibrating…</string>
+    <string name="workout_reps">REPS</string>
+    <string name="workout_bad_form">Keep your hips level with your shoulders</string>
+    <string name="workout_phone_moving">Put the phone back down to resume</string>
+    <string name="workout_counting_paused">Counting paused</string>
+    <string name="workout_pause">Pause</string>
+    <string name="workout_resume">Resume</string>
+    <string name="workout_end">End</string>
+    <string name="workout_start">Start Workout</string>
+    <string name="workout_session_complete">Session Complete</string>
+    <string name="workout_total_reps">Total Reps</string>
+    <string name="workout_duration">Duration</string>
+    <string name="workout_avg_pace">Avg Pace</string>
+    <string name="workout_stars_earned">Stars Earned</string>
+    <string name="workout_combo_bonus">Combo Bonus</string>
+    <string name="workout_personal_best">New Personal Best</string>
+    <string name="workout_back_dashboard">Back to Dashboard</string>
+    <string name="workout_reps_per_min">%1$.1f reps/min</string>
+    <string name="workout_type_title">Push-up type</string>
+    <string name="workout_begin">Begin</string>
+
+    <!-- Push-up variants -->
+    <string name="variant_normal_name">Standard</string>
+    <string name="variant_normal_desc">Classic position</string>
+    <string name="variant_military_name">Military</string>
+    <string name="variant_military_desc">Hands under shoulders, elbows tight</string>
+    <string name="variant_wide_name">Wide Grip</string>
+    <string name="variant_wide_desc">Hands far apart, chest dominant</string>
+    <string name="variant_diamond_name">Diamond</string>
+    <string name="variant_diamond_desc">Hands in triangle under chest</string>
+    <string name="variant_pike_name">Pike</string>
+    <string name="variant_pike_desc">Hips elevated, shoulders dominant</string>
+    <string name="variant_one_arm_name">One Arm</string>
+    <string name="variant_one_arm_desc">Ultimate challenge — strength and balance</string>
+
+    <!-- Profile -->
+    <string name="profile_total_reps">TOTAL REPS</string>
+    <string name="profile_best_session">BEST SESSION</string>
+    <string name="profile_best_streak">BEST STREAK</string>
+    <string name="profile_this_week">THIS WEEK</string>
+    <string name="profile_stars">STARS</string>
+    <string name="profile_friends_count">FRIENDS</string>
+    <string name="profile_advancements">Advancements</string>
+    <string name="profile_see_all">See all</string>
+    <string name="profile_body_stats">Body Stats</string>
+    <string name="profile_height">Height</string>
+    <string name="profile_weight">Weight</string>
+    <string name="profile_edit_name">Display Name</string>
+    <string name="profile_height_unit">%1$d cm</string>
+    <string name="profile_weight_unit">%1$d kg</string>
+    <string name="profile_no_data">—</string>
+    <string name="profile_how_it_works">How It Works</string>
+    <string name="profile_max_rank">Maximum rank — Legendary status</string>
+    <string name="profile_search_hint">Search by username…</string>
+    <string name="profile_remove_confirm_title">Remove %1$s?</string>
+    <string name="profile_remove_confirm_body">They\'ll no longer appear on your leaderboard.</string>
+
+    <!-- Advancements dialog -->
+    <string name="advancements_all">All</string>
+    <string name="advancements_unlocked">Unlocked</string>
+    <string name="advancements_locked">Locked</string>
+    <string name="advancements_subtitle">%1$d / %2$d unlocked</string>
+
+    <!-- Challenges -->
+    <string name="challenges_title">Challenges</string>
+    <string name="challenges_tab_all">All</string>
+    <string name="challenges_tab_active">Active</string>
+    <string name="challenges_tab_done">Done</string>
+    <string name="challenges_tab_expired">Expired</string>
+    <string name="challenges_difficulty_amateur">Amateur</string>
+    <string name="challenges_difficulty_medium">Medium</string>
+    <string name="challenges_difficulty_advanced">Advanced</string>
+    <string name="challenges_start">Start</string>
+    <string name="challenges_keep_going">Keep going</string>
+    <string name="challenges_abandon">Abandon</string>
+    <string name="challenges_abandon_title">Abandon challenge?</string>
+    <string name="challenges_activate_hint">Activate a challenge to start tracking</string>
+    <string name="challenges_days_left">%1$d days left</string>
+    <string name="challenges_hours_left">%1$d hrs left</string>
+
+    <!-- Friends -->
+    <string name="friends_title">Friends</string>
+    <string name="friends_add">Add Friend</string>
+    <string name="friends_no_friends">No friends yet</string>
+    <string name="friends_no_friends_body">Add friends to compete on the leaderboard</string>
+    <string name="friends_wants_friend">Wants to be your friend</string>
+    <string name="friends_accept">Accept</string>
+    <string name="friends_decline">Decline</string>
+    <string name="friends_remove">Remove</string>
+    <string name="friends_search_hint">Search by username…</string>
+    <string name="friends_no_results">No users found for that username</string>
+    <string name="friends_send_request">Send Request</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard_title">Rankings</string>
+    <string name="leaderboard_global">Global</string>
+    <string name="leaderboard_friends">Friends</string>
+    <string name="leaderboard_today">Today</string>
+    <string name="leaderboard_week">This Week</string>
+    <string name="leaderboard_month">This Month</string>
+    <string name="leaderboard_all_time">All Time</string>
+    <string name="leaderboard_empty">No entries yet</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_account">Account</string>
+    <string name="settings_section_session">Session</string>
+    <string name="settings_section_danger">Danger Zone</string>
+    <string name="settings_section_language">Language</string>
+    <string name="settings_email">Email</string>
+    <string name="settings_password">Password</string>
+    <string name="settings_password_change">Change</string>
+    <string name="settings_sign_out">Sign Out</string>
+    <string name="settings_delete_account">Delete Account</string>
+    <string name="settings_change_email_title">Change Email</string>
+    <string name="settings_change_email_body">A verification link will be sent to your new email.</string>
+    <string name="settings_new_email">New email</string>
+    <string name="settings_current_password">Current password</string>
+    <string name="settings_send_verification">Send verification</string>
+    <string name="settings_change_password_title">Change Password</string>
+    <string name="settings_new_password">New password</string>
+    <string name="settings_confirm_password">Confirm new password</string>
+    <string name="settings_password_update">Update</string>
+    <string name="settings_sign_out_title">Sign Out?</string>
+    <string name="settings_sign_out_body">You\'ll need to sign in again to track your reps.</string>
+    <string name="settings_delete_title">Delete Account</string>
+    <string name="settings_delete_body">This is permanent. All your reps, streaks, challenges, and friends will be deleted. This cannot be undone.</string>
+    <string name="settings_delete_confirm_hint">Confirm with your password</string>
+    <string name="settings_delete_forever">Delete Forever</string>
+    <string name="settings_lang_english">English</string>
+    <string name="settings_lang_french">Français</string>
+    <string name="settings_password_mismatch">Passwords do not match</string>
+    <string name="settings_password_too_short">Password must be at least 6 characters</string>
+    <string name="settings_section_guide">Guide</string>
+    <string name="settings_replay_tour">Replay the app guide</string>
+
+    <!-- Notifications settings -->
+    <string name="settings_section_notifications">Notifications</string>
+    <string name="settings_notif_daily_reminder">Daily push-up reminder</string>
+    <string name="settings_notif_daily_reminder_desc">Get reminded to do your push-ups each day</string>
+    <string name="settings_notif_reminder_time">Reminder time</string>
+    <string name="settings_notif_leaderboard">Ranking improvements</string>
+    <string name="settings_notif_leaderboard_desc">Be notified when you move up in the global or daily ranking</string>
+    <string name="settings_notif_challenges">Challenge deadlines</string>
+    <string name="settings_notif_challenges_desc">Get an alert when a challenge is about to expire</string>
+    <string name="settings_notif_test">Send a test notification</string>
+    <string name="settings_notif_test_title">Notifications are working</string>
+    <string name="settings_notif_test_body">PushIt notifications are set up correctly on this device.</string>
+
+    <!-- Notification channel names -->
+    <string name="notif_channel_reminder">Daily Reminder</string>
+    <string name="notif_channel_leaderboard">Rankings</string>
+    <string name="notif_channel_challenges">Challenges</string>
+
+    <!-- Notification content -->
+    <string name="notif_reminder_title">Time to do your push-ups</string>
+    <string name="notif_reminder_body">You haven\'t worked out today. Stay consistent and keep up your progress.</string>
+    <string name="notif_reminder_body_streak">You haven\'t worked out today. You have a %1$d-day streak to protect.</string>
+    <string name="notif_leaderboard_global_title">Global ranking improved</string>
+    <string name="notif_leaderboard_global_body">You are now ranked #%1$d in the global leaderboard. Keep pushing.</string>
+    <string name="notif_leaderboard_daily_title">Daily ranking improved</string>
+    <string name="notif_leaderboard_daily_body">You are now ranked #%1$d among your friends today.</string>
+    <string name="notif_challenge_deadline_title">Challenge expiring soon</string>
+    <string name="notif_challenge_deadline_body">"%1$s" expires in %2$d hours. Don\'t let it slip away.</string>
+
+    <!-- Onboarding tour -->
+    <string name="tour_skip">Skip</string>
+    <string name="tour_next">Next</string>
+    <string name="tour_done">Let\'s go!</string>
+
+    <string name="tour_0_title">Welcome to PushIt!</string>
+    <string name="tour_0_body">Hey, I\'m Leo — your training buddy. Let me show you around the app so you can start crushing it right away.</string>
+
+    <string name="tour_1_title">Your rank</string>
+    <string name="tour_1_body">This card shows your current rank tier and how many stars you have. Earn stars by doing reps, completing challenges, and keeping your streak alive!</string>
+
+    <string name="tour_2_title">Daily goal and streak</string>
+    <string name="tour_2_body">The ring fills up with today\'s reps toward your daily goal. The number next to it is your streak — consecutive active days. Don\'t break it!</string>
+
+    <string name="tour_3_title">Start training</string>
+    <string name="tour_3_body">Tap this button whenever you\'re ready to train. Set your phone facing you on the floor — the front camera will count every rep automatically!</string>
+
+    <string name="tour_4_title">Challenges</string>
+    <string name="tour_4_body">Weekly and monthly challenges push you to hit specific goals. Complete them to earn bonus stars and climb the ranks faster!</string>
+
+    <string name="tour_5_title">Global rankings</string>
+    <string name="tour_5_body">The Global tab ranks every PushIt player by total reps. Can you reach the top?</string>
+
+    <string name="tour_6_title">Friends ranking</string>
+    <string name="tour_6_body">Switch to Friends to see how you rank specifically against the people you know. Nothing like a bit of friendly competition!</string>
+
+    <string name="tour_7_title">Add friends</string>
+    <string name="tour_7_body">Tap the Add Friend button here, search by username, and start competing daily against your crew!</string>
+
+    <string name="tour_8_title">Your profile</string>
+    <string name="tour_8_body">Track your rank, achievements, and full session history right here. That\'s the tour — now go get those reps. I\'ll be cheering for you!</string>
+</resources>
