@@ -22,13 +22,13 @@ PushUp Royale is a native Android fitness game. Prop your phone against the wall
 
 ## Features
 
-**📸 AI Rep Counting** — MediaPipe Pose Landmarker runs on every CameraX frame. A state machine tracks your elbow angle and nose-to-floor distance: UP (angle > 150°) → DOWN (angle < 80°, nose near floor) → rep counted on the way back up, with a 300 ms debounce against double counts. Auto-calibration on the first frame adapts to your body size and camera distance. Supports 6 variants: Standard, Wide, Diamond, Archer, Pike, Decline.
+**AI Rep Counting** — MediaPipe Pose Landmarker runs on every CameraX frame. A state machine tracks your elbow angle and nose-to-floor distance: UP (angle > 150°) → DOWN (angle < 80°, nose near floor) → rep counted on the way back up, with a 300 ms debounce against double counts. Auto-calibration on the first frame adapts to your body size and camera distance. Supports 6 variants: Standard, Wide, Diamond, Archer, Pike, Decline.
 
-**🦴 Live Skeleton Overlay** — your detected pose is drawn over the camera preview in real time; bad form (hips sagging off the shoulder–ankle axis) triggers a gentle warning, and moving the phone freezes counting so you can't cheat by shaking it.
+**Live Skeleton Overlay** — your detected pose is drawn over the camera preview in real time; bad form (hips sagging off the shoulder–ankle axis) triggers a gentle warning, and moving the phone freezes counting so you can't cheat by shaking it.
 
-**⭐ Star Economy** — 1 star per rep, streak bonuses, and a combo multiplier (keep reps within 3 s: ×2 at 20 consecutive reps up to ×6 at 60+). Skipping days costs stars, so consistency matters as much as volume.
+**Star Economy** — 1 star per rep, streak bonuses, and a combo multiplier (keep reps within 3 s: ×2 at 20 consecutive reps up to ×6 at 60+). Skipping days costs stars, so consistency matters as much as volume.
 
-**🏆 16 Ranks** — six tiers, the first five split into I / II / III divisions, each with a unique Canvas-drawn emblem:
+**16 Ranks** — six tiers, the first five split into I / II / III divisions, each with a unique Canvas-drawn emblem:
 
 | Tier | Emblem | Stars |
 |---|---|---|
@@ -39,15 +39,15 @@ PushUp Royale is a native Android fitness game. Prop your phone against the wall
 | Legend I–III | Layered crown | 75 000 – 199 999 |
 | Immortal | Flaming orb | 200 000+ |
 
-**🎯 Challenges** — rotating weekly and monthly challenges (e.g. *Century Club*: 100 reps in one session, *No Days Off*: 28-day streak) with star entry fees and rewards.
+**Challenges** — rotating weekly and monthly challenges (e.g. *Century Club*: 100 reps in one session, *No Days Off*: 28-day streak) with star entry fees and rewards.
 
-**🎖️ Achievements** — collectible card-style badges across milestones, streaks, single-session records, and social goals, with rarity tiers, unlock progress bars on locked cards, and equippable profile tags.
+**Achievements** — collectible card-style badges across milestones, streaks, single-session records, and social goals, with rarity tiers, unlock progress bars on locked cards, and equippable profile tags.
 
-**👥 Social** — Google / email sign-in, add friends by username, global and friends-only leaderboards with an animated top-3 podium, public profile cards, and FCM push notifications for friend challenges and weekly recaps.
+**Social** — Google / email sign-in, add friends by username, global and friends-only leaderboards with an animated top-3 podium, public profile cards, and FCM push notifications for friend challenges and weekly recaps.
 
-**📊 Dashboard** — daily goal ring, streak flame, 7-day bar chart, rank progress card, and a one-tap quick start into the camera.
+**Dashboard** — daily goal ring, streak flame, 7-day bar chart, rank progress card, and a one-tap quick start into the camera.
 
-**🧭 Guided onboarding** — an interactive mascot-led tour walks new users through every screen.
+**Guided onboarding** — an interactive mascot-led tour walks new users through every screen.
 
 Works offline: sessions are stored locally in Room first and synced to Firestore when connectivity returns. Dark and light themes, English + French localization.
 
