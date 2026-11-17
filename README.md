@@ -2,7 +2,7 @@
   <img src="pushit.png" alt="PushUp Royale logo" width="140"/>
 </p>
 
-<h1 align="center">PushUp Royale</h1>
+<h1 align="center">PushIt</h1>
 
 <p align="center">
   <b>Turn push-ups into a game worth winning.</b><br/>
